@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intervenants - AfriConnect Summit 2026</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ============================================
+    NAVBAR
+    ============================================ -->
+    <header class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="bi bi-wifi"></i> AfriConnect Summit 2026
+            </a>
+            
+            <button class="hamburger" aria-label="Menu mobile" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-links" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="programme.html" role="menuitem">Programme</a></li>
+                <li role="none"><a href="intervenants.html" class="active" role="menuitem">Intervenants</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                <li role="none">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ============================================
+    HERO INTERNE
+    ============================================ -->
+    <section class="hero" style="min-height: 40vh; padding: 120px 0 60px;">
+        <div class="container hero-content">
+            <h1>Nos <span>intervenants</span></h1>
+            <p>Des experts passionnés venus des 4 coins de l'Afrique</p>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a> &gt; Intervenants
+            </nav>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FILTRES
+    ============================================ -->
+    <section style="padding: var(--spacing-lg) 0 0;">
+        <div class="container">
+            <nav class="filters" aria-label="Filtrage des intervenants">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="ai">🤖 IA & Tech</button>
+                <button class="filter-btn" data-filter="business">💼 Business</button>
+                <button class="filter-btn" data-filter="design">🎨 Design</button>
+                <button class="filter-btn" data-filter="data">📊 Data</button>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ============================================
+    GRILLE INTERVENANTS - 9 CARTES
+    ============================================ -->
+    <section style="padding: var(--spacing-md) 0 var(--spacing-xl);" aria-labelledby="speakers-list-title">
+        <div class="container">
+            <h2 id="speakers-list-title" class="section-title" style="display: none;">Liste des intervenants</h2>
+            
+            <div class="speakers-grid-all">
+                <!-- ===== CARTE 1 - IA & Tech ===== -->
+                <article class="speaker-card fade-in" data-category="ai">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Dr. Amara Diop - Expert en IA" />
+                    <div class="info">
+                        <div class="name">Dr. Amara Diop</div>
+                        <div class="title">Expert en IA & Deep Learning</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Sénégal</div>
+                    </div>
+                </article>
+
+                <!-- ===== CARTE 2 - Business ===== -->
+                <article class="speaker-card fade-in" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" alt="Fatou Ndiaye - Fondatrice Tech4Africa" />
+                    <div class="info">
+                        <div class="name">Fatou Ndiaye</div>
+                        <div class="title">Fondatrice & CEO Tech4Africa</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Sénégal</div>
+                    </div>
+                </article>
+
+                <!-- ===== CARTE 3 - Business ===== -->
+                <article class="speaker-card fade-in" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop" alt="Kofi Mensah - Investisseur Tech" />
+                    <div class="info">
+                        <div class="name">Kofi Mensah</div>
+                        <div class="title">Investisseur Tech & Mentor</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Ghana</div>
+                    </div>
+                </article>
+
+                <!-- ===== CARTE 4 - Design ===== -->
+                <article class="speaker-card fade-in" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop" alt="Zara Hassan - Designer UX/UI" />
+                    <div class="info">
+                        <div class="name">Zara Hassan</div>
+                        <div class="title">Designer UX/UI & Innovation</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Maroc</div>
+                    </div>
+                </article>
+
+                <!-- ===== CARTE 5 - Data ===== -->
+                <article class="speaker-card fade-in" data-category="data">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="Jean-Pierre Koffi - Data Scientist" />
+                    <div class="info">
+                        <div class="name">Jean-Pierre Koffi</div>
+                        <div class="title">Data Scientist & Analytics</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Côte d'Ivoire</div>
+                    </div>
+                </article>
+
+                <!-- ===== CARTE 6 - IA & Tech ===== -->
+                <article class="speaker-card fade-in" data-category="ai">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" alt="Moussa Traoré - Expert Blockchain" />
+                    <div class="info">
+                        <div class="name">Moussa Traoré</div>
+                        <div class="title">Expert Blockchain & Web3</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Mali</div>
+                    </div>
+                </article>
+
+                <!-- ===== CARTE 7 - Design ===== -->
+                <article class="speaker-card fade-in" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop" alt="Aisha Mbaye - Creative Director" />
+                    <div class="info">
+                        <div class="name">Aisha Mbaye</div>
+                        <div class="title">Creative Director & Brand Strategist</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Sénégal</div>
+                    </div>
+                </article>
+
+                <!-- ===== CARTE 8 - Data ===== -->
+                <article class="speaker-card fade-in" data-category="data">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop" alt="Dr. Grace Okafor - AI Researcher" />
+                    <div class="info">
+                        <div class="name">Dr. Grace Okafor</div>
+                        <div class="title">AI Researcher & Data Ethics</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Nigeria</div>
+                    </div>
+                </article>
+
+                <!-- ===== CARTE 9 - Business ===== -->
+                <article class="speaker-card fade-in" data-category="business">
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop" alt="Karim Benali - Serial Entrepreneur" />
+                    <div class="info">
+                        <div class="name">Karim Benali</div>
+                        <div class="title">Serial Entrepreneur & Investor</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Maroc</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="bi bi-wifi"></i> AfriConnect Summit</h4>
+                    <p style="color: var(--text-secondary);">
+                        La conférence tech panafricaine qui réunit les meilleurs talents du continent.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <a href="index.html">Accueil</a>
+                    <a href="programme.html">Programme</a>
+                    <a href="intervenants.html">Intervenants</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> AfriConnect Summit. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+    BOUTON RETOUR EN HAUT
+    ============================================ -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- ============================================
+    JAVASCRIPT
+    ============================================ -->
+    <script src="js/main.js"></script>
+</body>
+</html>
