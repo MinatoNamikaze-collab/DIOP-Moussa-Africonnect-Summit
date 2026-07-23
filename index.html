@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AfriConnect Summit 2026 - Conférence Tech Panafricaine</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ============================================
+    NAVBAR
+    ============================================ -->
+    <header class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="bi bi-wifi"></i> AfriConnect Summit 2026
+            </a>
+            
+            <button class="hamburger" aria-label="Menu mobile" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-links" role="menubar">
+                <li role="none"><a href="index.html" class="active" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="programme.html" role="menuitem">Programme</a></li>
+                <li role="none"><a href="intervenants.html" role="menuitem">Intervenants</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                <li role="none">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ============================================
+    HERO
+    ============================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-content">
+            <h1 id="hero-title">
+                L'avenir de la tech <span>africaine</span> commence ici
+            </h1>
+            <p>
+                <i class="bi bi-geo-alt"></i> Dakar, Sénégal · 23-25 Juillet 2026
+            </p>
+            <p>
+                Rejoignez 1200+ développeurs, entrepreneurs et investisseurs pour 3 jours d'innovation
+            </p>
+            
+            <div class="btn-group">
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="bi bi-ticket-perforated"></i> S'inscrire
+                </a>
+                <a href="programme.html" class="btn btn-secondary">
+                    <i class="bi bi-calendar-event"></i> Voir le programme
+                </a>
+            </div>
+            
+            <!-- Compte à rebours -->
+            <div id="countdown" class="countdown">
+                <div class="countdown-item">
+                    <div class="number" id="days">00</div>
+                    <div class="label">Jours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="number" id="hours">00</div>
+                    <div class="label">Heures</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="number" id="minutes">00</div>
+                    <div class="label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="number" id="seconds">00</div>
+                    <div class="label">Secondes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CHIFFRES CLÉS
+    ============================================ -->
+    <section class="stats" aria-labelledby="stats-title">
+        <div class="container">
+            <h2 id="stats-title" class="section-title">
+                <span>L'impact</span> en chiffres
+            </h2>
+            
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="1200">0+</div>
+                    <div class="stat-label">Participants</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="48">0+</div>
+                    <div class="stat-label">Intervenants</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Jours d'innovation</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Pays représentés</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    POURQUOI PARTICIPER
+    ============================================ -->
+    <section class="why-attend" aria-labelledby="why-title">
+        <div class="container">
+            <h2 id="why-title" class="section-title">
+                Pourquoi <span>participer</span> ?
+            </h2>
+            <p class="section-subtitle">3 raisons de rejoindre l'événement tech de l'année</p>
+            
+            <div class="why-grid">
+                <div class="why-item fade-in">
+                    <div class="icon"><i class="bi bi-people-fill"></i></div>
+                    <h3>Networking Premium</h3>
+                    <p>Rencontrez les décideurs, investisseurs et talents les plus influents du continent africain.</p>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="icon"><i class="bi bi-lightbulb-fill"></i></div>
+                    <h3>Innovation & Connaissances</h3>
+                    <p>Découvrez les dernières tendances tech, IA, blockchain et bénéficiez de masterclasses exclusives.</p>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
+                    <h3>Opportunités Business</h3>
+                    <p>Accédez à des opportunités de financement, partenariats et projets collaboratifs uniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    INTERVENANTS VEDETTES
+    ============================================ -->
+    <section class="speakers" aria-labelledby="speakers-title">
+        <div class="container">
+            <h2 id="speakers-title" class="section-title">
+                Intervenants <span>vedettes</span>
+            </h2>
+            <p class="section-subtitle">Découvrez nos speakers d'exception</p>
+            
+            <div class="speakers-grid">
+                <article class="speaker-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Dr. Amara Diop - Expert en IA" />
+                    <div class="info">
+                        <div class="name">Dr. Amara Diop</div>
+                        <div class="title">Expert en Intelligence Artificielle</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Sénégal</div>
+                    </div>
+                </article>
+                
+                <article class="speaker-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" alt="Fatou Ndiaye - Fondatrice Tech4Africa" />
+                    <div class="info">
+                        <div class="name">Fatou Ndiaye</div>
+                        <div class="title">Fondatrice Tech4Africa</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Sénégal</div>
+                    </div>
+                </article>
+                
+                <article class="speaker-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop" alt="Kofi Mensah - Investisseur Tech" />
+                    <div class="info">
+                        <div class="name">Kofi Mensah</div>
+                        <div class="title">Investisseur Tech & Mentor</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Ghana</div>
+                    </div>
+                </article>
+                
+                <article class="speaker-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop" alt="Zara Hassan - Designer UX/UI" />
+                    <div class="info">
+                        <div class="name">Zara Hassan</div>
+                        <div class="title">Designer UX/UI & Innovation</div>
+                        <div class="country"><i class="bi bi-geo-alt"></i> Maroc</div>
+                    </div>
+                </article>
+            </div>
+            
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="intervenants.html" class="btn btn-primary">
+                    <i class="bi bi-people"></i> Voir tous les intervenants
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    SPONSORS
+    ============================================ -->
+    <section class="sponsors" aria-labelledby="sponsors-title">
+        <div class="container">
+            <h2 id="sponsors-title" class="section-title">
+                Nos <span>partenaires</span>
+            </h2>
+            
+            <div class="sponsors-grid">
+                <div class="sponsor-item gold">
+                    <i class="bi bi-star-fill" style="color: #FFD700;"></i>
+                    <h4>Orange</h4>
+                    <p>Partenaire Or</p>
+                </div>
+                <div class="sponsor-item silver">
+                    <i class="bi bi-star" style="color: #C0C0C0;"></i>
+                    <h4>Wave</h4>
+                    <p>Partenaire Argent</p>
+                </div>
+                <div class="sponsor-item bronze">
+                    <i class="bi bi-star" style="color: #CD7F32;"></i>
+                    <h4>Jumia</h4>
+                    <p>Partenaire Bronze</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="bi bi-wifi"></i> AfriConnect Summit</h4>
+                    <p style="color: var(--text-secondary);">
+                        La conférence tech panafricaine qui réunit les meilleurs talents du continent.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <a href="index.html">Accueil</a>
+                    <a href="programme.html">Programme</a>
+                    <a href="intervenants.html">Intervenants</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> AfriConnect Summit. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+    BOUTON RETOUR EN HAUT
+    ============================================ -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- ============================================
+    JAVASCRIPT
+    ============================================ -->
+    <script src="js/main.js"></script>
+</body>
+</html>
