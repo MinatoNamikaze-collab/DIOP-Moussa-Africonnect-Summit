@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programme - AfriConnect Summit 2026</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ============================================
+    NAVBAR
+    ============================================ -->
+    <header class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="bi bi-wifi"></i> AfriConnect Summit 2026
+            </a>
+            
+            <button class="hamburger" aria-label="Menu mobile" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-links" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="programme.html" class="active" role="menuitem">Programme</a></li>
+                <li role="none"><a href="intervenants.html" role="menuitem">Intervenants</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                <li role="none">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ============================================
+    HERO INTERNE
+    ============================================ -->
+    <section class="hero" style="min-height: 40vh; padding: 120px 0 60px;">
+        <div class="container hero-content">
+            <h1>Programme <span>2026</span></h1>
+            <p>3 jours d'innovation, de partage et de connexions</p>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a> &gt; Programme
+            </nav>
+        </div>
+    </section>
+
+    <!-- ============================================
+    ONGLETS 3 JOURS
+    ============================================ -->
+    <section class="tabs" aria-labelledby="tabs-title">
+        <div class="container">
+            <h2 id="tabs-title" class="section-title" style="display: none;">Programme détaillé</h2>
+            
+            <!-- Navigation des onglets -->
+            <nav class="tabs-nav" role="tablist" aria-label="Jours du programme">
+                <button class="tab-btn active" data-tab="day1" role="tab" aria-selected="true" aria-controls="day1">
+                    <i class="bi bi-calendar2-day"></i> Jour 1 · 23 Juillet
+                </button>
+                <button class="tab-btn" data-tab="day2" role="tab" aria-selected="false" aria-controls="day2">
+                    <i class="bi bi-calendar2-day"></i> Jour 2 · 24 Juillet
+                </button>
+                <button class="tab-btn" data-tab="day3" role="tab" aria-selected="false" aria-controls="day3">
+                    <i class="bi bi-calendar2-day"></i> Jour 3 · 25 Juillet
+                </button>
+            </nav>
+            
+            <!-- Contenu Jour 1 -->
+            <div id="day1" class="tab-content active" role="tabpanel" aria-labelledby="tab-day1">
+                <h3 style="margin-bottom: var(--spacing-md);">📅 Jeudi 23 Juillet 2026</h3>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 09:30</td>
+                            <td>Ouverture & Mot de bienvenue</td>
+                            <td>Dr. Amara Diop</td>
+                            <td>Grand Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>09:30 - 10:30</td>
+                            <td>Keynote : L'IA au service de l'Afrique</td>
+                            <td>Dr. Amara Diop</td>
+                            <td>Grand Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>10:45 - 11:45</td>
+                            <td>Atelier : Design Thinking & Innovation</td>
+                            <td>Zara Hassan</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 13:00</td>
+                            <td>Table ronde : Financement des startups</td>
+                            <td>Kofi Mensah</td>
+                            <td>Salle B</td>
+                        </tr>
+                        <tr>
+                            <td>14:30 - 16:00</td>
+                            <td>Masterclass : Cloud & Infrastructure</td>
+                            <td>Fatou Ndiaye</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>16:15 - 17:30</td>
+                            <td>Networking & Cocktail</td>
+                            <td>Tous les intervenants</td>
+                            <td>Espace Expo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Contenu Jour 2 -->
+            <div id="day2" class="tab-content" role="tabpanel" aria-labelledby="tab-day2">
+                <h3 style="margin-bottom: var(--spacing-md);">📅 Vendredi 24 Juillet 2026</h3>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td>Keynote : Blockchain & Fintech</td>
+                            <td>Kofi Mensah</td>
+                            <td>Grand Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>10:15 - 11:15</td>
+                            <td>Atelier : UX/UI pour l'Afrique</td>
+                            <td>Zara Hassan</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>11:30 - 12:30</td>
+                            <td>Table ronde : EdTech & Formation</td>
+                            <td>Fatou Ndiaye</td>
+                            <td>Salle B</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:30</td>
+                            <td>Masterclass : Data Science & Analytics</td>
+                            <td>Dr. Amara Diop</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>15:45 - 17:00</td>
+                            <td>Pitch Session : Startups africaines</td>
+                            <td>Jury d'investisseurs</td>
+                            <td>Grand Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>17:00 - 18:30</td>
+                            <td>Afterwork & Networking</td>
+                            <td>Tous les participants</td>
+                            <td>Espace Expo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Contenu Jour 3 -->
+            <div id="day3" class="tab-content" role="tabpanel" aria-labelledby="tab-day3">
+                <h3 style="margin-bottom: var(--spacing-md);">📅 Samedi 25 Juillet 2026</h3>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td>Keynote : L'avenir du travail en Afrique</td>
+                            <td>Fatou Ndiaye</td>
+                            <td>Grand Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>10:15 - 11:15</td>
+                            <td>Atelier : Low-code & No-code</td>
+                            <td>Dr. Amara Diop</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>11:30 - 12:30</td>
+                            <td>Table ronde : Éthique & Tech</td>
+                            <td>Zara Hassan</td>
+                            <td>Salle B</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:30</td>
+                            <td>Masterclass : Entrepreneuriat Tech</td>
+                            <td>Kofi Mensah</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>15:45 - 17:00</td>
+                            <td>Clôture & Remise des prix</td>
+                            <td>Comité d'organisation</td>
+                            <td>Grand Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>17:00 - 19:00</td>
+                            <td>Fête de clôture</td>
+                            <td>Tous les participants</td>
+                            <td>Espace Expo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    THÉMATIQUES
+    ============================================ -->
+    <section style="padding: var(--spacing-xl) 0; background: var(--bg-secondary);" aria-labelledby="themes-title">
+        <div class="container">
+            <h2 id="themes-title" class="section-title">
+                Nos <span>thématiques</span>
+            </h2>
+            <p class="section-subtitle">4 piliers pour transformer l'Afrique par la tech</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-md);">
+                <div class="why-item fade-in" style="text-align: left;">
+                    <div class="icon" style="font-size: 2.5rem;">🤖</div>
+                    <h3>IA & Machine Learning</h3>
+                    <p>Découvrez comment l'intelligence artificielle révolutionne les secteurs clés en Afrique.</p>
+                </div>
+                <div class="why-item fade-in" style="text-align: left;">
+                    <div class="icon" style="font-size: 2.5rem;">💼</div>
+                    <h3>Business & Innovation</h3>
+                    <p>Les modèles d'affaires innovants qui transforment l'économie africaine.</p>
+                </div>
+                <div class="why-item fade-in" style="text-align: left;">
+                    <div class="icon" style="font-size: 2.5rem;">🎨</div>
+                    <h3>Design & Créativité</h3>
+                    <p>L'importance du design thinking dans la création de produits impactants.</p>
+                </div>
+                <div class="why-item fade-in" style="text-align: left;">
+                    <div class="icon" style="font-size: 2.5rem;">📊</div>
+                    <h3>Data & Analytics</h3>
+                    <p>Exploitez la donnée pour prendre des décisions stratégiques éclairées.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="bi bi-wifi"></i> AfriConnect Summit</h4>
+                    <p style="color: var(--text-secondary);">
+                        La conférence tech panafricaine qui réunit les meilleurs talents du continent.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <a href="index.html">Accueil</a>
+                    <a href="programme.html">Programme</a>
+                    <a href="intervenants.html">Intervenants</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> AfriConnect Summit. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+    BOUTON RETOUR EN HAUT
+    ============================================ -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- ============================================
+    JAVASCRIPT
+    ============================================ -->
+    <script src="js/main.js"></script>
+</body>
+</html>
